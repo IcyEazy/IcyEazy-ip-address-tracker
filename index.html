@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <div class="head">
+        <div class="head-content">
+          <h1>IP Address Tracker</h1>
+          <div class="input">
+            <input type="text" placeholder="Search for any IP address or domain">
+            <img id="enter" src="./images/icon-arrow.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="map-content">
+          <div class="map-infos">
+            <div class="info">
+              <p class="info-type">IP Address</p>
+              <p id="ip" class="info-value">165.155.161.88</p>
+            </div>
+            <hr class="desktop">
+            <div class="info">
+              <p class="info-type">Location</p>
+              <p class="info-value"><span id="city">Downtown Brooklyn</span>, <span id="state">New York</span> <span id="postal-code">10001</span></p>
+            </div>
+            <hr class="desktop">
+            <div class="info">
+              <p class="info-type">Timezone</p>
+              <p class="info-value">UTC <span id="utc-value" class="utc-value">-05:00</span></p>
+            </div>
+            <hr class="desktop">
+            <div class="info">
+              <p class="info-type">ISP</p>
+              <p id="isp" class="info-value">New York City Board</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="map" class="map">
+
+      </div>
+    </main>
+    
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+        Coded by <a href="#">Adigun Israel Collins</a>.
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
